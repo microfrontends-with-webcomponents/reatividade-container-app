@@ -1,0 +1,47 @@
+<html>
+  <head>
+    <!-- <script>
+      window["GlobalWebWorker"] = new Worker(
+        new URL("http://localhost:6001/main.bundle.js")
+      );
+    </script> -->
+    <script src="http://localhost:4201/main.js"></script>
+    <script src="http://localhost:4201/runtime.js"></script>
+    <script src="http://localhost:4201/polyfills.js"></script>
+    <script src="http://localhost:4201/vendor.js"></script>
+    <script src="http://localhost:4200/main.js"></script>
+    <script src="http://localhost:4200/runtime.js"></script>
+    <script src="http://localhost:4200/polyfills.js"></script>
+    <script src="http://localhost:4200/vendor.js"></script>
+    <style>
+      .wrapper {
+        display: flex;
+      }
+
+      .wrapper.column {
+        flex-direction: column;
+      }
+
+      .wrapper.spaceAround {
+        justify-content: space-around;
+      }
+
+      .borderDotted {
+        border: 1px dotted black;
+        padding: 10px;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="wrapper spaceAround">
+      <div class="borderDotted">
+        <h1>Micro-Frontend 1 - Counter App</h1>
+        <app-root></app-root>
+      </div>
+      <div class="borderDotted">
+        <h1>Micro-Frontend 2 - Card App</h1>
+        <app-card></app-card>
+      </div>
+    </div>
+  </body>
+</html>
